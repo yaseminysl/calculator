@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div id="calculator">
+      <div id="screen"></div>
+      <table>
+        <tr>
+          <th colspan="4">
+            <textarea name="screen" id="calScreen" rows="3" readonly>0
+            </textarea>
+          </th>
+        </tr>
+        <tr>
+          <td class="horizontalOp"><button onclick="clickDel()">C</button></td>
+          <td class="horizontalOp"><button onclick="minusPlus()">+/-</button></td>
+          <td class="horizontalOp"><button onclick="percent()">%</button></td>
+          <td class="verticalOp"><button onclick="clicDiv()">/</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="updateNumber(7)">7</button></td>
+          <td><button onclick="updateNumber(8)">8</button></td>
+          <td><button onclick="updateNumber(9)">9</button></td>
+          <td class="verticalOp"><button onclick="clickMult()">*</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="updateNumber(4)">4</button></td>
+          <td><button onclick="updateNumber(5)">5</button></td>
+          <td><button onclick="updateNumber(6)">6</button></td>
+          <td class="verticalOp"><button onclick="clickMin()">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="updateNumber(1)">1</button></td>
+          <td><button onclick="updateNumber(2)">2</button></td>
+          <td><button onclick="updateNumber(3)">3</button></td>
+          <td class="verticalOp"><button onclick="clickPlus()">+</button></td>
+        </tr>
+        <tr>
+          <td class="bigBtn" colspan="2"><button onclick="updateNumber(0)">0</button></td>
+          <td><button onclick="updateNumber('.')">,</button></td>
+          <td class="verticalOp"><button onclick="clickEqu()">=</button></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <script src="calculator.js"></script>
+</html>
